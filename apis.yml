@@ -2,7 +2,7 @@ aid: light-and-wonder
 url: https://raw.githubusercontent.com/api-evangelist/light-and-wonder/refs/heads/main/apis.yml
 name: Light & Wonder
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Gaming
   - Casino
