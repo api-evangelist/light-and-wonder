@@ -27,6 +27,12 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/light-and-wonder.png
 tags:
   - Gaming
+  - Casinos
+  - iGaming
+  - Mobile Games
+  - Entertainment
+tags_raw:
+  - Gaming
   - Casino
   - iGaming
   - Mobile Games
