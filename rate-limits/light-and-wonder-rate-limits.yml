@@ -1,0 +1,7 @@
+name: Light & Wonder rate limits
+generated: '2026-10-20'
+method: none
+source: https://gateway.lnw.com/
+limit_count: 0
+note: No public API documentation; integration docs sit behind the Okta customer login at gateway.lnw.com. No rate limits are published.
+limits: []

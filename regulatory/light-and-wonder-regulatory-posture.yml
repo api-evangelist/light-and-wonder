@@ -1,0 +1,89 @@
+generated: '2026-10-20'
+method: searched
+probe: true
+source: https://explore.lnw.com/privacy-policy/
+signals:
+  data_subject_request:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'CALIFORNIA RESIDENTS / Requests to Know and Delete'
+    channel: Privacy Rights Request forms (Corporate, Gaming, iGaming, SciPlay) linked at the end of the policy
+    stated_sla: 'We endeavor to respond to a verifiable consumer request within forty-five (45) days of its receipt.'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'To exercise your right to know and right to delete described above, please submit a verifiable consumer request to us using our Privacy Rights Request forms found at the end of this policy or you can e-mail us at'
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'We endeavor to respond to a verifiable consumer request within forty-five (45) days of its receipt. If we require more time, we will inform you of the reason for the extension.'
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      section: 'Right to Erasure'
+      quote: 'You have the right to request that we erase personal information that we hold about you, subject to certain conditions.'
+    note: >-
+      A published DSR route for CCPA (know/delete, 45-day response target, twice per 12 months) and GDPR/UK GDPR
+      rights (access, rectification, erasure, restriction, objection, withdrawal of consent), exercised through
+      per-business-line webforms or a privacy email. A data protection officer is named in the policy.
+  exit_assistance:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'Right to Data Portability'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'You also have a right to data portability when the data processing is based on consent or on a contract between you and Light & Wonder and the data was processed by automated means.'
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'For data portability requests, we will select a format to provide your personal information that is readily useable.'
+    note: >-
+      Personal-data portability under GDPR and CCPA only. The format is chosen by Light & Wonder. This is not a
+      customer data export or exit-assistance commitment for business customers; no such terms were found.
+  data_retention:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'RETENTION OF INFORMATION'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'Light & Wonder retains all personal information for the duration of the relevant business relationship or, where required, in accordance with its information management policies and schedules, subject to applicable laws.'
+    note: The retention period is described by condition (for the length of the business relationship or under internal schedules). No fixed period is stated.
+  data_residency:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'INFORMATION WE TRANSFER'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'Light & Wonder shall transfer personal data on a regular basis to its parent company outside the European Union, Switzerland and the U.K. and, more specifically, in the United States of America.'
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'All such transfers shall be made through an approved transfer mechanism—such as our Intra-Group Data Transfer Agreement or Standard Contractual Clauses, or with your explicit consent.'
+    note: >-
+      This is a cross-border transfer disclosure, not a promise to keep data in a region: EU/UK/Swiss data
+      goes to the US under an intra-group agreement or SCCs. The policy offers no in-region storage option.
+  global_privacy_control:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'DO NOT TRACK'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'Therefore, “do not track” signals transmitted from web browsers do not apply to our Sites, and we do not alter any of our data collection and use practices upon'
+    note: >-
+      A denial. The policy says browser Do Not Track signals are not honoured. It does not mention Global
+      Privacy Control by name, so it makes no claim to honour GPC.
+  age_assurance:
+    url: https://explore.lnw.com/privacy-policy/
+    section: 'CHILDREN’S PRIVACY'
+    evidence:
+    - source: https://explore.lnw.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-20'
+      quote: 'Our sites are general audience Sites not directed at children under the age of 13. If we obtain actual knowledge that any information we collect has been provided by a child under the age of 13, we will promptly delete that information.'
+    note: >-
+      A COPPA-style statement that the sites are general audience and children's data is deleted once
+      discovered. No age verification or age-assurance mechanism is described on this page.

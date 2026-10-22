@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: searched
+source: https://docs.oracle.com/en/industries/hospitality/enterprise-integrations/gaming-integration/25.1/gamig/c_light_wonder_cmp_acsc.htm
+docs: https://docs.oracle.com/en/industries/hospitality/enterprise-integrations/gaming-integration/25.1/gamig/c_light_wonder_cmp_acsc.htm
+scope: Light & Wonder CMP (casino management) webservices, as documented by a THIRD PARTY (Oracle Hospitality OPERA Cloud gaming integration guide). Light & Wonder publishes no public API documentation of its own; its Gateway integration docs (gateway.lnw.com) sit behind an Okta/Auth0 customer login.
+schemes:
+- name: oauth2-client-credentials
+  type: oauth2
+  flow: clientCredentials
+  token_url_pattern: http://{Rest API Based Service URL}/oauth?grant_type=client_credentials
+  evidence: 'Access Token URI:[ex:http://{Rest API Based Service URL}/oauth?grant_type=client_credentials] Client id: Username of the token service Client Secret: password of the token service'
+  additional_parameters:
+  - name: client-id
+    description: client id parameter of the service call
+  - name: property-id
+    description: property id of the Light & Wonder
+  provisioning: Credentials and the per-property service URL are requested from the Light & Wonder point of contact; the host is deployment-specific ({hostname}:{port}), not a public multi-tenant endpoint.
+note: Third-party evidence only. The scheme describes the on-property CMP webservices consumed by OPERA Cloud, not a publicly callable Light & Wonder API.

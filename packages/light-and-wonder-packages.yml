@@ -1,0 +1,8 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://registry.npmjs.org/-/v1/search?text=light%20wonder%20lnw
+- https://registry.npmjs.org/@lnw%2fsdk
+- https://gateway.lnw.com/
+note: No first-party SDK or client library found. npm @lnw/sdk and @lnw/lnw-sdk return 404; npm search returned no Light & Wonder packages. Integration documentation is behind the Okta customer login at gateway.lnw.com.
+packages: []

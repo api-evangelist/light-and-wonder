@@ -1,0 +1,30 @@
+name: Light & Wonder MCP Server
+type: MCPServer
+generated: '2026-10-20'
+method: none
+status: none
+description: 'No official Light & Wonder MCP server was found. A web search for a Light & Wonder MCP server
+  named none, and the pre-flight contract discovery (2026-10-20) recorded mcp: absent on api.lnw.com,
+  explore.lnw.com, portal.lnw.com and igaming.lnw.com. No candidate tool list was derived because the
+  repo holds no OpenAPI contract. Integration documentation sits behind a customer login on gateway.lnw.com.
+  The pre-flight mcp hold on developer.lnw.com/docs/mcp was re-checked on 2026-10-20 and is a catch-all
+  sign-in page, not an MCP server or docs.'
+checked:
+- query: '"Light & Wonder" MCP server Model Context Protocol'
+  result: no Light & Wonder results
+- url: https://gateway.lnw.com/integrations
+  note: customer-login-gated integration docs (see apis.yml x-coverage)
+- url: https://developer.lnw.com/docs/mcp
+  status: 301
+  note: 'redirects to https://gateway.lnw.com/docs/mcp (200), which serves the same generic Gateway sign-in
+    page as a nonexistent control path (https://gateway.lnw.com/docs/zzqq-nonexist, 200, identical text)
+    -- a catch-all, not MCP documentation. This is the pre-flight "mcp: hold-unverified" lead, now resolved
+    as absent.'
+tools: []
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched

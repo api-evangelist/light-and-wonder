@@ -1,0 +1,12 @@
+name: Light & Wonder pricing
+generated: '2026-10-20'
+method: none
+source: https://gateway.lnw.com/
+audience: unclear
+pricing_basis: negotiated
+published: false
+plan_count: 0
+note: No pricing or plans page published. Gateway access is for customers and studios via Okta ("Gain Okta access through our Light & Wonder Portal"); commercial terms are not public.
+delivery:
+  model: unclear
+plans: []

@@ -1,7 +1,11 @@
 aid: light-and-wonder
+
 url: https://raw.githubusercontent.com/api-evangelist/light-and-wonder/refs/heads/main/apis.yml
+
 name: Light & Wonder
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -13,6 +17,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -24,19 +29,25 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/light-and-wonder.png
+
 tags:
   - Gaming
   - Casinos
   - iGaming
   - Mobile Games
   - Entertainment
+  - Slot Machines
+  - Social Gaming
+
 tags_raw:
   - Gaming
   - Casino
   - iGaming
   - Mobile Games
   - Entertainment
+
 description: >-
   Light & Wonder is a leading cross-platform global games company that develops
   and distributes gaming content across land-based casinos, mobile platforms,
@@ -45,10 +56,31 @@ description: >-
   subsidiaries SciPlay (mobile social gaming) and Grover Gaming. Light & Wonder
   operates customer-facing support portals for both gaming and iGaming
   partners.
+
 created: '2026-05-04'
-modified: '2026-10-06'
+
+modified: '2026-10-20'
+
 specificationVersion: '0.23'
+
+maintainers:
+  - FN: API Evangelist
+    email: kin@apievangelist.com
+    url: https://apievangelist.com
+
 common:
+  - type: Lifecycle
+    url: lifecycle/light-and-wonder-lifecycle.yml
+  - type: Hosts
+    url: hosts/light-and-wonder-hosts.yml
+  - type: Vendors
+    url: vendors/light-and-wonder-vendors.yml
+  - type: Roadmap
+    url: https://gateway.lnw.com/roadmap
+  - type: Newsroom
+    url: https://explore.lnw.com/newsroom/
+  - type: Documentation
+    url: https://developer.lnw.com/
   - url: https://explore.lnw.com/newsroom/
     type: Blog
   - type: DomainSecurity
@@ -61,6 +93,65 @@ common:
     url: https://igaming.lnw.com/online-support-portal/
   - type: Contact
     url: https://explore.lnw.com/contact-us/
-maintainers:
-  - FN: API Evangelist
-    url: https://apievangelist.com
+  - type: DeveloperPortal
+    url: https://gateway.lnw.com/
+    description: Light & Wonder Gateway, the partner hub for managing games, reports and integrations; developer.lnw.com resolves here.
+  - type: Login
+    url: https://gateway.lnw.com/login
+  - type: HelpCenter
+    url: https://explore.lnw.com/support/
+  - type: PrivacyPolicy
+    url: https://explore.lnw.com/privacy-policy/
+  - type: LegalNotices
+    url: https://explore.lnw.com/legal-notices/
+  - type: Careers
+    url: https://lnw.wd5.myworkdayjobs.com/LightWonderExternalCareers
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/lightnwonder/
+
+apis:
+  - aid: light-and-wonder:gateway
+    name: Light & Wonder Gateway
+    description: >-
+      Light & Wonder Gateway is the partner hub where customers and studios manage
+      games, roadmaps, reports, game assets and integrations ("Integrate our tools
+      ... comprehensive documentation"). Integration documentation sits behind an
+      Okta / Auth0 customer login; no public API reference, base URL or
+      machine-readable contract is published.
+    humanURL: https://gateway.lnw.com/integrations
+    tags:
+      - Gaming
+      - iGaming
+      - Integrations
+    properties:
+      - type: Documentation
+        url: https://gateway.lnw.com/integrations
+      - type: Login
+        url: https://gateway.lnw.com/login
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    developer.lnw.com redirects to gateway.lnw.com, whose Integrations page only
+    offers Demo, Okta customer and Auth0 internal sign-in (cms-gateway.lnw.com/api/connect/auth0),
+    and no OpenAPI, GraphQL, AsyncAPI, WSDL or proto was found on gateway.lnw.com,
+    portal.lnw.com, igaming.lnw.com or explore.lnw.com.
+  evidence:
+    - url: https://www.lnw.com/
+      status: 200
+    - url: https://developer.lnw.com/integrate
+      status: 200
+    - url: https://gateway.lnw.com/integrations
+      status: 200
+    - url: https://gateway.lnw.com/openapi.json
+      status: 404
+    - url: https://gateway.lnw.com/swagger.json
+      status: 404
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
